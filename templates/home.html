@@ -1,10 +1,50 @@
 <!DOCTYPE  html>
 <html>
     <head>
-        <title>Hidayat</title>
+        <title>Hidayah</title>
+        <style>
+            h1{
+                font-size: 40px;
+                font-family: Roboto;
+                font-weight: normal;
+                color: #5DC08D;
+                text-align: center
+            }
+            #banner{
+                 height: 300px;
+                 width: 100%;
+            }
+            h2{
+                font-size: 30px;
+                font-family: Roboto;
+                font-weight: normal;
+                color: #5DC08D;
+                text-align: center;
+            }
+            p{
+                font-size: 20px;
+                font-family: Roboto;
+                font-weight: normal;
+                color: #000000;
+                text-align: justify;
+            }
+            #container{
+                max-width: 1000px;
+                margin-left: 250px;
+            }
+        </style>
     </head>
     <body>
-        <h1>Hidayat</h1>
-        <img src = ""
+        <div id ="container">
+        <h1>Al Huda</h1>
+        <img id ="banner" src="{{ url_for('static', filename='versetwo.png') }}">
+        <h2>About Al Huda</h2>
+        <p>Al Huda is an online learning platform dedicated to making the study of Arabic, the Quran, Seerat-un-Nabi (ﷺ), and Islamic History accessible, engaging, and easy to understand for learners of all ages and backgrounds. Our mission is to present authentic knowledge in the simplest possible way, helping students build a strong foundation in Islamic learning without unnecessary complexity.
+
+            At Hidayat, learners gain access to carefully structured video lectures, study notes, reading materials, and educational resources designed to support effective and enjoyable learning. Each course is developed with clarity and practicality in mind, allowing students to progress at their own pace while deepening their understanding of Islamic teachings and heritage.</p>
+        <h2>Courses</h2>
+        <p> TODO - Show the jobs here</p>
+        <button>Contact Us</button>
+            </div>
     </body>
 </html>
