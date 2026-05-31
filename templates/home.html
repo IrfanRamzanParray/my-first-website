@@ -7,17 +7,21 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     </head>
     <body>
-        <div >
-        <h1>Al Huda</h1>
-        <img id ="banner" src="{{ url_for('static', filename='versetwo.png') }}">
-        <h2>About Al Huda</h2>
-        <p>Al Huda is an online learning platform dedicated to making the study of Arabic, the Quran, Seerat-un-Nabi (ﷺ), and Islamic History accessible, engaging, and easy to understand for learners of all ages and backgrounds. Our mission is to present authentic knowledge in the simplest possible way, helping students build a strong foundation in Islamic learning without unnecessary complexity.
+        <div class = "container">
+        <h1 class = "text-center">Al Huda</h1>
+        <img class="container" id ="banner" src="{{ url_for('static', filename='versetwo.png') }}">
+        <h2 class = "text-center">About Al Huda</h2>
+        <p class="lead">Al Huda is an online learning platform dedicated to making the study of Arabic, the Quran, Seerat-un-Nabi (ﷺ), and Islamic History accessible, engaging, and easy to understand for learners of all ages and backgrounds. Our mission is to present authentic knowledge in the simplest possible way, helping students build a strong foundation in Islamic learning without unnecessary complexity.
 
             At Hidayat, learners gain access to carefully structured video lectures, study notes, reading materials, and educational resources designed to support effective and enjoyable learning. Each course is developed with clarity and practicality in mind, allowing students to progress at their own pace while deepening their understanding of Islamic teachings and heritage.</p>
-        <h2>Courses</h2>
-        <p> TODO - Show the jobs here</p>
+        <h2 class = "text-center">Courses</h2>
+      <div>
+        {% for job in jobs %}
+           {% include 'jobitem.html' %}
+        {% endfor %}    
+       </div>     
             <div>
-        <button>Contact Us</button>
+        <button btn btn-primary btn-lg>Contact Us</button>
                 <p>Copyright 2026, Al Huda</p>
                 </div>
             
